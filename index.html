@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Dumps and CVV2 Shop. The best quality cards from the Legendary Brian Krebs">    
+    <meta name="author" content="Brian Krebs">
+    <meta http-equiv="onion-location" content="http://briansclcfyc5oe34hgxnn3akr4hzshy3edpwxsilvbsojp2gwxr57qd.onion">
+    <meta name="n" content="2">
+
+    <title>Welcome!</title>    
+    <link href="../static/images/favicon_v3.ico" rel="icon" type="image/x-icon">
+    <link href="/static/images/favicon_v3.ico" rel="shortcut" type="image/x-icon">
+    <title>BriansClub - Sign In.</title>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="../static/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../static/css/mainlogin.css">
+    
+        <!-- Custom styles for this template -->
+    <!-- <link href="/static/css/signin.css" rel="stylesheet"> -->
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../static/js/jquery.min.js"></script> 
+    <script src="../static/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+<noscript>
+    <div class="alert alert-danger fade in" style='text-align: center;font-size:15pt;' tabindex="-1">
+        <p>Please enable Javascript to continue.</p>
+    </div>
+</noscript>
+
+<section class="form-section" id="form-section" style="background-image: url(../static/images/login/mockup-1.jpg);">
+    
+    <div class="form-decorations">        
+        <div class="form-decorations__logo form-decorations__item">
+            <img src="../static/images/login/logo.png" alt="">
+        </div>
+        <div class="form-decorations__item">
+            <img src="../static/images/login/doc1.png" alt="">
+        </div>
+        <div class="form-decorations__item">
+            <img src="../static/images/login/doc2.png" alt="">
+        </div>
+        <div class="form-decorations__item">
+            <img src="../static/images/login/flowerpot.png" alt="">
+        </div>
+        <div class="form-decorations__item">
+            <img src="../static/images/login/Three_Cards.png" alt="">
+        </div>
+        <div class="form-decorations__item">
+            <img src="../static/images/login/newspaper1.png" alt="">
+        </div>
+        <div class="form-decorations__item">
+            <img src="../static/images/login/A4_later.png" alt="">
+        </div>
+        <div class="form-decorations__item">
+            <img src="../static/images/login/key.png" alt="">
+        </div>
+    </div>
+    
+    <div class="form-wrapper container">
+        
+        <form class="form form-signin" id="form-sing-in" action="/login/" method="post" role="form">
+            <input type="hidden" name="csrfmiddlewaretoken" value="4vqw7xOy4zchGowCwOWn9PK6oDqSsh5J">
+            
+            <h3 class="form-title">
+                <span>
+                    Please sign in
+                </span>
+            </h3>
+            
+
+
+
+<div class="alert alert-danger alert-danger-page fade in" style="display:none;margin-top:10px;" tabindex="-1">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <p id="pageDanger"></p>
+</div>
+<div class="alert alert-block alert-success alert-success-page fade in" style="display:none;margin-top:10px;" tabindex="-1">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <p id="pageSuccess"></p>
+</div>
+<div class="alert alert-block alert-info alert-info-page fade in" style="display:none;margin-top:30px;" tabindex="-1">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <p id="pageInfo"></p>
+</div>
+
+            
+            <div class="form-group">
+                <label for="id_username" class="form__label control-label">Username</label>
+                <div class="form-group__wrapper form-group">
+                    <input required="" type="text" id="id_username" name="username" placeholder="Username" maxlength="32" class="form__input">
+                    <span class="form-group__icon">
+                        <i class="zmdi zmdi-account"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form__label">Password</label>
+                <div class="form-group__wrapper form-group">
+                    <input type="password" id="password" name="password" maxlength="64" placeholder="Password" required="required" class="form__input">
+                    <span class="form-group__icon">
+                        <i class="zmdi zmdi-account"></i>
+                    </span>                    
+                </div>
+                <input type="checkbox" onclick="ShowPassword()" class="form__label">&nbsp;<label for="password" class="form__label">Show Password </label>
+            </div>
+            
+            
+            <div class="form-group captcha-wrapper" style="margin-top: 20px;">
+                <!-- <label for="code" class="form__label">enter code</label> -->
+                <div class="form-group__wrapper" style="display: ruby-text-container;">
+                    <img src="../captcha/image/1208b25bd5723efdd28b9cd98ac7a666cb84bac2" alt="captcha" class="captcha"> <input id="id_captcha_0" name="captcha_0" type="hidden" value="1208b25bd5723efdd28b9cd98ac7a666cb84bac2"> <input autocomplete="off" id="id_captcha_1" name="captcha_1" type="text">
+                    <span class="form-group__captcha" id="captcha"></span>
+                </div>                
+            </div>
+            
+            
+            <div class="form-buttons">
+                <button class="button form__button form__button--gradient" type="submit">Login</button>
+                 <a href="/register" class="button form__button ">Register</a> 
+            </div>
+
+            <div class="form-links">
+                <a href="#modalReset" class="form-links__item" data-toggle="modal">Forgot Password?</a>
+                <a href="/static/credit_report.pdf" target="_blank" class="form-links__item">Credit Report</a>
+            </div>
+        </form>
+    </div>
+    
+    <div class="modal fade" id="modalReset" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="modalResetTitle">Reset Password</h4>
+                </div>
+                <div class="modal-body">
+                    Please create a new account and submit a ticket requesting password reset for your original account.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    $(document).ready(function () {
+        $("#id_captcha_1").attr('class', 'form__input');
+        $("#id_captcha_1").attr('required', 'required');
+        $("#id_captcha_1").attr('placeholder', 'Equals?');
+        $("#id_captcha_1").css("width", "auto");
+        $("#id_username").keypress(function(event){
+            var ew = event.which;
+            if(48 <= ew && ew <= 57)
+                return true;
+            if(65 <= ew && ew <= 90)
+                return true;
+            if(97 <= ew && ew <= 122)
+                return true;
+            return false;
+        });
+    })
+    function ShowPassword() {
+        var x = $("#password");
+        if (x.attr("type") === "password") {
+            x.attr("type","text");
+        } else {
+            x.attr("type","password");
+        }
+    };
+</script>
+
+
+
+
+
+</body><!-- <script src="/static/js/bundle.js"></script> --></html>
